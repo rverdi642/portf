@@ -1,33 +1,169 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.mdl-layout__header {
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-direction: column;
   flex-direction: column;
-  align-items: center;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  min-height: 64px;
+  max-height: 1000px;
+  z-index: 3;
+  /* background-color: rgb(190, 203, 211); */
+  /* color: rgb(255,255,255); */
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-property: max-height, -webkit-box-shadow;
+  transition-property: max-height, -webkit-box-shadow;
+  -o-transition-property: max-height, box-shadow;
+  transition-property: max-height, box-shadow;
+  transition-property: max-height, box-shadow, -webkit-box-shadow;
+}
+
+
+.header-color {
+  background: #525957;  /* fallback for old browsers */
+  /* background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  Chrome 10-25, Safari 5.1-6 */
+  /* background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.landing-grid {
+  background: #ddd5e2;  /*fallback for old browsers */
+  /* background-image: url('./components/img/port-splash.jpg'); */
+  /* background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  Chrome 10-25, Safari 5.1-6 */
+  /* background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* object-fit: scale-down; */
+  width: 100%;
+  height: 100%;
+}
+
+.projects-grid {
+  display: flex;
+}
+
+.btn{
+  margin: 10px;
+  text-decoration: none;
+}
+/* Resume Page css */
+.resume-right-col {
+  background: #27221F;
+  color: white;
+  display: block;
+  padding: 2em;
+  animation-name: fadeIn;
+  animation-duration: 1.5s;
+
+        keyframes fadeIn {
+            from {color: white;}
+            to {color: #353B3E;}
+        }
+}
+
+/* contact page css */
+
+.contact-body {
+  margin: auto;
+  position: fixed;
+  width: 100%;
+  height: 100%;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding-top: 2em;
+}
+
+.contact-grid {
+  text-align: center;
+  justify-content: center;
+  width: 80%;
+  height: 550px;
+  background: white;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.contact-grid h2 {
+  font-family: 'Anton', sans-serif;
+}
+
+.contact-grid p {
+  font-family: 'Oxygen', sans-serif;
+  font-weight: bold;
+}
+
+.contact-grid hr {
+  border-top: 5px dotted black;
+  width: 50%;
+  margin: auto;
+}
+
+.contact-list i {
+  font-size: 66px;
+  padding-right: 5rem;
+}
+
+
+/* contact page css */
+
+.photo-img {
+  height: 250px;
+  padding-top: 10em;
+  border-radius: 5%;
+}
+
+.banner-text {
+  background-color: black;
+  opacity: .8;
+  width: 75%;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.banner-text h1 {
+  font-size: 66px;
+  font-weight: bold;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.banner-text hr {
+  border-top: 5px dotted white;
+  width: 50%;
+  margin: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.banner-text p {
+  color: white;
+  font-size: 20px;
+  padding: 1em;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: auto;
+}
+
+.social-links i {
+  color: white;
+  font-size: 5em;
+  padding: 8px;
 }

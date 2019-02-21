@@ -1,0 +1,28 @@
+form {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: flex-start;
+margin-left: 85px;
+}
+
+.input{
+
+    height: 30px;
+    width: 160px;
+    margin-bottom: 5px;
+    
+}
+
+.text {
+    height: 50px;
+    width: 160px;
+    margin-top: 5px;
+    
+}
+
+.btn{
+    height: 25px;
+    width: 100px;
+    margin-top: 5px;
+}
