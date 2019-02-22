@@ -8,7 +8,7 @@ import './contact.css'
 class Contact extends Component {
   render() {
     return(
-      <div className="contact-body">
+      <div className="contact-body" style={{backgroundColor: 'rgba(161, 107, 123, 0.579)'}}>
         <Grid className="contact-grid">
           <Cell col={6}>
             <h2>Richard L Verdier</h2>

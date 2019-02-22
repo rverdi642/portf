@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
-
+import DSTE from '../components/img/dste.PNG';
+import conway from '../components/img/conways.JPG';
+import django from '../components/img/django.png';
+import react from '../components/img/React-icon.png';
+import Notes from '../components/img/app7.PNG';
 
 class Projects extends Component {
   constructor(props) {
@@ -12,12 +16,12 @@ class Projects extends Component {
 
     if(this.state.activeTab === 0){
       return(
-        <div className="projects-grid">
+        <div className="projects-grid" style={{backgroundColor: 'rgba(161, 107, 123, 0.579)'}}>
           {/* Project 1 */}
-          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{color: '#fff', Height: '176px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >React Project #1</CardTitle>
-            <CardText >
-              Don't Send That Email! IBM Watson based tone/emotion analyzer for emails
+          <Card shadow={5} style={{Width: '450', margin: 'auto'}}>
+            <CardTitle expand style={{height: '295px', background: `url(${DSTE}) center / cover`}} ></CardTitle>
+            <CardText style={{height: '150px'}}>
+              <b>Don't Send That Email!</b> IBM Watson based tone/emotion analyzer for emails. Created by Lambda Labs Project Team. Stack consisted of React, Express, Stripe, Postgresql, Axios, Watson
             </CardText>
             <CardActions border>
            
@@ -25,40 +29,39 @@ class Projects extends Component {
               <a className='btn' href="https://dont-send-that-email.netlify.com/">Live Demo</a>
               
             </CardActions>
-            <CardMenu >
-              <IconButton name="share" />
-            </CardMenu>
+          
           </Card>
 
           {/* Project 2 */}
           <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >React Project #2</CardTitle>
-            <CardText>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+            <CardTitle expand style={{color: '#aff', height: '300px', background: `url(${conway}) center / cover`}} ></CardTitle>
+            <CardText style={{height: '150px'}}>
+            A very famous cellular automaton is John Conway's Game of Life. app. This game is a class of discrete model known as a Cellular Automaton, abbreviated CA.
             </CardText>
             <CardActions border>
-              <a className='btn' href="https://github.com/Lambda-School-Labs/dont-send-that-email">GitHub</a>
-              <a className='btn' href="https://dont-send-that-email.netlify.com/">Live Demo</a>
+              <a className='btn' href="https://github.com/rverdi642/Conways-Life">GitHub</a>
+              <a className='btn' href="https://game-of-life-rlv.netlify.com/">Live Demo</a>
             </CardActions>
-            <CardMenu style={{color: '#fff'}}>
-              <IconButton name="share" />
-            </CardMenu>
+       
           </Card>
 
           {/* Project 3 */}
           <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >React Project #3</CardTitle>
+            <CardTitle expand style={{color: '#fff', height: '207px', background: `url(${Notes}) center / cover`}} >Front End Project Week</CardTitle>
             <CardText>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+              <p><b> Lambda Notes</b></p>
+            <p>Display a list of notes</p>
+            <p>Create a note with a title and content</p>
+            <p>View an existing note</p>
+            <p>Edit an existing note</p>
+            <p>Delete an existing note</p>
             </CardText>
             <CardActions border>
-              <Button colored>GitHub</Button>
-              {/* <Button colored>CodePen</Button> */}
-              <Button colored>Live Demo</Button>
+            <a className='btn' href="https://github.com/rverdi642/front-end-project-week/tree/master/front-end-project-designs">GitHub</a>
+            
+           
             </CardActions>
-            <CardMenu style={{color: '#fff'}}>
-              <IconButton name="share" />
-            </CardMenu>
+     
           </Card>
         </div>
 
@@ -66,7 +69,18 @@ class Projects extends Component {
       )
     } else if(this.state.activeTab === 1) {
       return (
-        <div><h1>This is Django</h1></div>
+        <div>
+        <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+            <CardTitle style={{color: '#fff', height: '176px', background: `url(${django}) center / cover`}} >Django Project #1</CardTitle>
+            <CardText>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+            </CardText>
+            <CardActions border>
+              <Button colored>GitHub</Button>
+              
+            </CardActions>
+          </Card>
+         </div> 
       )
     } else if(this.state.activeTab === 2) {
       return (
@@ -74,7 +88,7 @@ class Projects extends Component {
       )
     } else if(this.state.activeTab === 3) {
       return (
-        <div><h1>This is MongoDB</h1></div>
+        <div><h1>Working through discovery</h1></div>
       )
     }
 

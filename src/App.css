@@ -58,7 +58,13 @@
 
 .projects-grid {
   display: flex;
+ 
 }
+
+Page .demo-card-wide{
+  width: 800px;
+}
+
 
 .btn{
   margin: 10px;
@@ -124,13 +130,15 @@
 /* contact page css */
 
 .photo-img {
-  height: 250px;
-  padding-top: 10em;
-  border-radius: 5%;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
 }
 
 .banner-text {
-  background-color: black;
+  background-color: rgba(161, 107, 123, 0.979);
   opacity: .8;
   width: 75%;
   margin: auto;
@@ -167,3 +175,5 @@
   font-size: 5em;
   padding: 8px;
 }
+
+

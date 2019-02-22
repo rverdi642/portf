@@ -1,12 +1,37 @@
 import React, { Component } from 'react';
 import { Grid, Cell } from 'react-mdl';
+import { Document, Page } from 'react-pdf/dist/entry.parcel';
+import 'react-pdf/dist/Page/AnnotationLayer.css';
 import Education from './education';
 import Experience from './experience';
 import Skills from './skills';
 import RLV from './img/RLV.jpg';
 
+const options = {
+  cMapUrl: 'cmaps/',
+  cMapPacked: true,
+};
 
 class Resume extends Component {
+
+
+  state = {
+    file: pdfFile,
+    numPages: null,
+  }
+
+  onFileChange = (event) => {
+    this.setState({
+      file: event.target.files[0],
+    });
+  }
+
+  onDocumentLoadSuccess = ({ numPages }) => {
+    this.setState({ numPages });
+  }
+
+
+
   render() {
     return(
       <div>
@@ -21,7 +46,7 @@ class Resume extends Component {
                  />
             </div>
 
-            <h2 style={{paddingTop: '2em'}}>Richard L. Verdier</h2>
+            {/* <h2 style={{paddingTop: '2em'}}>Richard L. Verdier</h2>
             <h4 style={{color: 'grey'}}>Software Engineer</h4>
             <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
             <p>Expanding my technical depth in order to more effectively understand and mentor technical resources.
@@ -35,10 +60,10 @@ Recently graduated from a 7 month Front-End Web Developer program at Lambda Scho
             <p>rverdi643@gmail.com</p>
             <h5>Web</h5>
             <p>mywebsite.com</p>
-            <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
+            <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/> */}
           </Cell>
           <Cell className="resume-right-col" col={8}>
-            <h2>Education</h2>
+            {/* <h2>Education</h2>
 
 
             <Education
@@ -111,7 +136,7 @@ Recently graduated from a 7 month Front-End Web Developer program at Lambda Scho
                     <Skills
                       skill="React"
                       progress={50}
-                      />
+                      /> */}
 
 
           </Cell>
