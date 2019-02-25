@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Document, Page } from 'react-pdf/dist/entry.webpack';
 // import 'react-pdf/dist/Page/AnnotationLayer.css';
-import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
+import { Card } from 'react-mdl';
 // import './Sample.less';
 
 import pdfFile from './assests/RlvResume.pdf';
@@ -35,7 +35,7 @@ export default class Sample extends Component {
         </nav>
         <div>
         <Card shadow={5} style={{ width: 600 ,margin: 'auto'}}>
-              <Document style={{height: '800', width: '800'}}
+              <Document style={{height: '800', width: '900'}}
                 file={pdfFile}
                 onLoadSuccess={this.onDocumentLoadSuccess}
               >

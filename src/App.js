@@ -42,13 +42,8 @@ class App extends Component {
     return (
       <div className="demo-big-content">
     <Layout style={{background: `url(${splash}) center / cover`}}>
-        <Header transparent className="header-color" title={<Link style={{textDecoration: 'none', color: 'white'}} to="/">Richard Verdier</Link>} scroll>
-        {/* <img
-                className="photo-img"
-                src={RLV}
-                alt="Richard Verdier"
-                style={{height: '200px', marginTop: '100px' }}
-                 /> */}
+        <Header transparent className="header-color"  title={<Link style={{textDecoration: 'none', color: 'white'}} to="/">Richard Verdier</Link>} scroll >
+        
             <Navigation>
 
             
@@ -58,6 +53,14 @@ class App extends Component {
                 <Link to="/contact">Contact</Link>
             </Navigation>
         </Header>
+        <div className="mdl-card__media" style={{leftMargin: '0px', backgroundColor: 'transparent'}}>
+        <img
+                className="photo-img"
+                src={RLV}
+                alt="Richard Verdier"
+                style={{height: '200px'}}
+                 />
+                 </div>
         <Drawer style={{backgroundColor: 'white'}} title={<Link style={{textDecoration: 'none', color: 'black'}} to="/">Richard Verdier</Link>}>
             <Navigation >
               <Link to="/resume1">Resume</Link>

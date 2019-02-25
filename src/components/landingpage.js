@@ -39,12 +39,12 @@ class Landing extends Component {
             <hr/>
 
           <p>HTML/CSS | Bootstrap | JavaScript | React | Django | NodeJS | Express | Python</p>
-          <img src={css} height="42" width="42" />
-          <img src={bootstrap} height="42" width="42" />
-          <img src={javascript} height="42" width="42" />
-          <img src={react} height="42" width="42" />
-          <img src={django} height="42" width="42" />                     
-          <img src={python} height="42" width="42" />                    
+          <img src={css} alt='CSS' height="42" width="42" />
+          <img src={bootstrap} alt='bootstrap' height="42" width="42" />
+          <img src={javascript} alt ='javascript' height="42" width="42" />
+          <img src={react} alt='react' height="42" width="42" />
+          <img src={django} alt='django' height="42" width="42" />                     
+          <img src={python} alt='python' height="42" width="42" />                    
                               
                               
 

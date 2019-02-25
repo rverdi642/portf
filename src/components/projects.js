@@ -100,10 +100,10 @@ class Projects extends Component {
     return(
       <div>
         <Tabs  activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
-          <Tab>React</Tab>
-          <Tab>Django</Tab>
-          <Tab>Future Development Stack</Tab>
-          <Tab>MongoDB</Tab>
+          <Tab style={{color: 'black', background: '#c9cacc'}}>React</Tab>
+          <Tab style={{color: 'black', background: '#c9cacc'}}>Django</Tab>
+          <Tab style={{color: 'black', background: '#c9cacc'}}>Future Development Stack</Tab>
+          <Tab style={{color: 'black', background: '#c9cacc'}}>MongoDB</Tab>
         </Tabs>
 
 
