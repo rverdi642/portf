@@ -1,3 +1,5 @@
+
+
 .mdl-layout__header {
   display: -ms-flexbox;
   display: flex;
@@ -34,8 +36,6 @@
   transition-property: max-height, box-shadow;
   transition-property: max-height, box-shadow, -webkit-box-shadow;
 }
-
-
 .header-color {
   background: #525957;  /* fallback for old browsers */
   /* background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  Chrome 10-25, Safari 5.1-6 */
@@ -43,7 +43,7 @@
 }
 
 .landing-grid {
-  background: #ddd5e2;  /*fallback for old browsers */
+  /* background: #ddd5e2;*/  /*fallback for old browsers */
   /* background-image: url('./components/img/port-splash.jpg'); */
   /* background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  Chrome 10-25, Safari 5.1-6 */
   /* background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -54,6 +54,7 @@
   /* object-fit: scale-down; */
   width: 100%;
   height: 100%;
+  
 }
 
 .projects-grid {
@@ -76,19 +77,21 @@ Page .demo-card-wide{
   color: white;
   display: block;
   padding: 2em;
-  animation-name: fadeIn;
-  animation-duration: 1.5s;
+}
 
-        keyframes fadeIn {
-            from {color: white;}
-            to {color: #353B3E;}
-        }
+.fas {
+  margin: 10px;
+  font-size: 600%;
+}
+.fab {
+  margin: 10px;
+  font-size: 600%;
 }
 
 /* contact page css */
 
 .contact-body {
-  margin: auto;
+  margin-top: 100px;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -101,7 +104,7 @@ Page .demo-card-wide{
   justify-content: center;
   width: 80%;
   height: 550px;
-  background: white;
+  background: rgb(235, 212, 212,0.833);
   color: black;
   margin-bottom: 20px;
 }
@@ -138,17 +141,20 @@ Page .demo-card-wide{
 }
 
 .banner-text {
-  background-color: rgba(161, 107, 123, 0.979);
+
+  background-color: rgba(235, 225, 228, 0.952);
   opacity: .8;
   width: 75%;
-  margin: auto;
+  margin-top: 200px;
+  margin-left: 150px;
   border-radius: 10px;
 }
 
 .banner-text h1 {
+  margin-top: 100px;
   font-size: 66px;
   font-weight: bold;
-  color: white;
+  color: rgb(43, 36, 36);
 }
 
 .banner-text hr {
@@ -158,7 +164,7 @@ Page .demo-card-wide{
 }
 
 .banner-text p {
-  color: white;
+  color: rgb(43, 36, 36);
   font-size: 20px;
   padding: 1em;
 }
@@ -168,10 +174,18 @@ Page .demo-card-wide{
   justify-content: space-between;
   width: 50%;
   margin: auto;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(219, 197, 197);
+  color: rgb(173, 147, 147);
+  text-align: center;
 }
 
-.social-links i {
-  color: white;
+.social-links icon {
+  color: rgb(22, 10, 10);
+  height: 50px;
   font-size: 5em;
   padding: 8px;
 }

@@ -4,7 +4,7 @@ import capture from '../components/img/blog.jpg';
 
 
 
-class About extends Component {
+class thoughts extends Component {
   render() {
     return(
       <div style={{ backgroundColor: 'rgba(161, 107, 123, 0.579)'}}>
@@ -25,4 +25,4 @@ class About extends Component {
   }
 }
 
-export default About;
+export default thoughts;

@@ -8,16 +8,16 @@ import './contact.css'
 class Contact extends Component {
   render() {
     return(
-      <div className="contact-body" style={{backgroundColor: 'rgba(161, 107, 123, 0.579)'}}>
+      <div className="contact-body" style={{backgroundColor: 'rgba(235, 225, 228, 0.452)'}}>
         <Grid className="contact-grid">
           <Cell col={6}>
-            <h2>Richard L Verdier</h2>
-            <img
+            <h2>Searching....</h2>
+            {/* <img
                 className="photo-img"
                 src={RLV}
                 alt="Richard Verdier"
                 style={{height: '200px'}}
-                 />
+                 /> */}
              <p style={{ width: '75%', margin: 'auto', paddingTop: '1em'}}>Expanding my technical depth in order to more effectively understand and mentor technical resources.
 Recently graduated from a 7 month Front-End Web Developer program at Lambda School,that included a 5 week capstone program that resulted in an application that analyzed emails (or any text) for emotional tone analysis using the IBM Watson tone analyzer API. The technology stack components used were Front-End ( React, React Router, React Bootstrap, Axios, CSS ), for the Backend - (ExpressJS, NodeJS, Passport, Knex, Bcrypt  PostgresQL ).</p>
 
@@ -42,8 +42,8 @@ Recently graduated from a 7 month Front-End Web Developer program at Lambda Scho
 
 
                 <ListItem>
-                  <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}>
-                    <i className="fa fa-envelope" aria-hidden="true"/>
+                  <ListItemContent style={{marginLeft: '75px', fontSize: '30px', fontFamily: 'Anton'}}>
+                    <icon className="fa fa-envelope" aria-hidden="true"/>
                     rverdi643@gmail.com
                   </ListItemContent>
                 </ListItem>

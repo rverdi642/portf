@@ -3,7 +3,7 @@ import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, 
 import DSTE from '../components/img/dste.PNG';
 import conway from '../components/img/conways.JPG';
 import django from '../components/img/django.png';
-import react from '../components/img/React-icon.png';
+// import react from '../components/img/React-icon.png';
 import Notes from '../components/img/app7.PNG';
 
 class Projects extends Component {
@@ -16,7 +16,7 @@ class Projects extends Component {
 
     if(this.state.activeTab === 0){
       return(
-        <div className="projects-grid" style={{backgroundColor: 'rgba(161, 107, 123, 0.579)'}}>
+        <div className="projects-grid" style={{backgroundColor: 'rgba(235, 225, 228, 0.452)',marginTop: '75px'}}>
           {/* Project 1 */}
           <Card shadow={5} style={{Width: '450', margin: 'auto'}}>
             <CardTitle expand style={{height: '295px', background: `url(${DSTE}) center / cover`}} ></CardTitle>
@@ -99,11 +99,11 @@ class Projects extends Component {
   render() {
     return(
       <div>
-        <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
+        <Tabs  activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
           <Tab>React</Tab>
           <Tab>Django</Tab>
           <Tab>Future Development Stack</Tab>
-          {/* <Tab>MongoDB</Tab> */}
+          <Tab>MongoDB</Tab>
         </Tabs>
 
 

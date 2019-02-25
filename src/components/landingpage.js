@@ -1,54 +1,84 @@
 import React, { Component } from 'react';
 import { Grid, Cell } from 'react-mdl';
 import RLV from './img/RLV.jpg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import bootstrap from "./img/bootstrap.png";
+import javascript from "./img/javascript.png";
+import css from "./img/css-logo-1.png";
+import django from "./img/django.png";
+import python from "./img/pythonLogo.png";
+import react from "./img/React-icon.png";
+
+
 
 class Landing extends Component {
   render() {
     return(
-       <div style={{width: '100%', margin: 'auto'}}>
+      <div>
+
+          
+
+       <div >
+
+          
+
       
         <Grid className="landing-grid">
+
+
+
+
           <Cell col={12}>
-          <img
-                className="photo-img"
-                src={RLV}
-                alt="Richard Verdier"
-                style={{height: '200px'}}
-                 />
 
             <div className="banner-text">
+
+
+
               <h1>Software Engineer</h1>
 
             <hr/>
 
           <p>HTML/CSS | Bootstrap | JavaScript | React | Django | NodeJS | Express | Python</p>
+          <img src={css} height="42" width="42" />
+          <img src={bootstrap} height="42" width="42" />
+          <img src={javascript} height="42" width="42" />
+          <img src={react} height="42" width="42" />
+          <img src={django} height="42" width="42" />                     
+          <img src={python} height="42" width="42" />                    
+                              
+                              
 
-        <div className="social-links">
 
-          {/* LinkedIn */}
-          <a href="http://google.com" rel="noopener noreferrer" target="_blank">
-            <i className="fa fa-linkedin-square" aria-hidden="true" />
-          </a>
-
-          {/* Github */}
-          <a href="http://google.com" rel="noopener noreferrer" target="_blank">
-            <i className="fa fa-github-square" aria-hidden="true" />
-          </a>
-
-          {/* Freecodecamp */}
-          <a href="http://google.com" rel="noopener noreferrer" target="_blank">
-            <i className="fa fa-free-code-camp" aria-hidden="true" />
-          </a>
-
-          {/* Youtube */}
-          <a href="http://google.com" rel="noopener noreferrer" target="_blank">
-            <i className="fa fa-youtube-square" aria-hidden="true" />
-          </a>
-
-        </div>
             </div>
           </Cell>
         </Grid>
+        
+      </div>
+
+        <div className="social-links">
+
+              {/* LinkedIn */}
+              <a href="http://google.com" rel="noopener noreferrer" target="_blank">
+                <i className="fa fa-linkedin-square" aria-hidden="true" />
+              </a>
+
+              {/* Github */}
+              <a>
+              {/* <a href="http://google.com" rel="noopener noreferrer" target="_blank">
+                <icon className="fa fa-github-square" aria-hidden="true" /> */}
+                <FontAwesomeIcon
+                          icon={['fab', 'github']}
+                          className="fa fa-github-square"
+                          style={{color: 'black',height: '50px;'}}
+                        />
+              </a>
+
+              {/* Youtube */}
+              <a href="http://google.com" rel="noopener noreferrer" target="_blank">
+                <i className="fa fa-youtube-square" aria-hidden="true" />
+              </a>
+
+          </div>
       </div>
     )
   }
