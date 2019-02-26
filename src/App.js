@@ -53,12 +53,12 @@ class App extends Component {
                 <Link to="/contact">Contact</Link>
             </Navigation>
         </Header>
-        <div className="mdl-card__media" style={{leftMargin: '0px', backgroundColor: 'transparent'}}>
+        <div className="mdl-card__media" style={{backgroundColor: 'transparent'}}>
         <img
                 className="photo-img"
                 src={RLV}
                 alt="Richard Verdier"
-                style={{height: '200px'}}
+                style={{marginLeft:'25px',marginTop: '25px', height: '200px'}}
                  />
                  </div>
         <Drawer style={{backgroundColor: 'white'}} title={<Link style={{textDecoration: 'none', color: 'black'}} to="/">Richard Verdier</Link>}>

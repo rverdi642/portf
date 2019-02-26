@@ -1,6 +1,7 @@
 
 
 .mdl-layout__header {
+  position: fixed;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -136,7 +137,7 @@ Page .demo-card-wide{
   position: relative;
   width: 200px;
   height: 200px;
-  
+
   overflow: hidden;
   border-radius: 50%;
 }

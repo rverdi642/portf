@@ -8,7 +8,7 @@ import './contact.css'
 class Contact extends Component {
   render() {
     return(
-      <div className="contact-body" style={{backgroundColor: 'rgba(235, 225, 228, 0.452)'}}>
+      <div className="contact-body" style={{backgroundColor: 'rgba(235, 225, 228, 0.452)', height: '300px', overflowY: 'scroll'}}>
         <Grid className="contact-grid">
           <Cell col={6}>
             <h2>Searching....</h2>
