@@ -5,6 +5,7 @@ import conway from '../components/img/conways.JPG';
 import django from '../components/img/django.png';
 // import react from '../components/img/React-icon.png';
 import Notes from '../components/img/app7.PNG';
+import './projects.css';
 
 class Projects extends Component {
   constructor(props) {
@@ -57,7 +58,7 @@ class Projects extends Component {
             <p>Delete an existing note</p>
             </CardText>
             <CardActions border>
-            <a className='btn' href="https://github.com/rverdi642/front-end-project-week/tree/master/front-end-project-designs">GitHub</a>
+              <a className='btn' href="https://github.com/rverdi642/front-end-project-week/tree/master/front-end-project-designs">GitHub</a>
             
            
             </CardActions>

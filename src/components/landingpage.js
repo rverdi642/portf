@@ -25,7 +25,10 @@ class Landing extends Component {
       
         <Grid className="landing-grid">
 
-
+          {/* <div class="LI-profile-badge"  data-version="v1" 
+          data-size="medium" data-locale="en_US" data-type="horizontal" 
+          data-theme="dark" data-vanity="richard-verdier-2990b61"><a class="LI-simple-link" 
+          href='https://www.linkedin.com/in/richard-verdier-2990b61?trk=profile-badge'>Richard Verdier</a></div> */}
 
 
           <Cell col={12}>

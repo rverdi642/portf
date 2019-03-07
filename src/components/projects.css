@@ -1,0 +1,22 @@
+.mdl-tabs {
+    margin-top: 30px;
+    border: none;
+    padding: 0 24px 0 24px;
+    float: left;
+    position: relative;
+    display: block;
+    text-decoration: none;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: rgba(180, 42, 42, 0.54);
+    overflow: hidden;
+}
+
+.mdl-layout{
+
+    background-color: rgba(161, 107, 123, 0.579);
+}

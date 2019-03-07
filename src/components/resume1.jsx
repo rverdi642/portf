@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import { Document, Page } from 'react-pdf/dist/entry.webpack';
 // import 'react-pdf/dist/Page/AnnotationLayer.css';
 import { Card } from 'react-mdl';
-// import './Sample.less';
 
-import pdfFile from './assests/RlvResume.pdf';
+
+import pdfFile from './assests/RLVResume.pdf';
 
 // const options = {
 //   cMapUrl: 'cmaps/',
