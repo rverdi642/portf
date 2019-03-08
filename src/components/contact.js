@@ -8,7 +8,7 @@ import './contact.css'
 class Contact extends Component {
   render() {
     return(
-      <div className="contact-body" style={{backgroundColor: 'rgba(235, 225, 228, 0.452)', height: '300px', overflowY: 'scroll'}}>
+      <div className="contact-body" style={{backgroundColor: 'rgba(235, 225, 228, 0.452)', height: '500px', overflowY: 'scroll'}}>
         <Grid className="contact-grid">
           <Cell col={6}>
             <h2>Searching....</h2>
@@ -23,28 +23,30 @@ Recently graduated from a 7 month Front-End Web Developer program at Lambda Scho
 
           </Cell>
           <Cell col={6}>
-            <h2>Let's Talk</h2>
-            <hr/>
+            <h2 style={{width: '400px'}}>Let's Talk</h2>
+            <hr style={{marginLeft: '100px'}}/>
 
             <div className="contact-list">
               <List>
-                <ListItem>
-                  <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}>
-                  <FontAwesomeIcon 
+                {/* <ListItem>
+                  <ListItemContent > */}
+                  {/* <FontAwesomeIcon 
                 icon={['fas', 'at']}
                 class="space"
-                />
+                /> */}
                     {/* <i className="fa fa-phone-square" aria-hidden="false"/> */}
                     {/* (682) 559-0833 */}
-                  </ListItemContent>
-                </ListItem>
+                  {/* </ListItemContent>
+                </ListItem> */}
 
 
 
                 <ListItem>
+                  {/* <ListItemContent style={{marginLeft: '75px', fontSize: '30px', fontFamily: 'Anton'}}> */}
                   <ListItemContent style={{marginLeft: '75px', fontSize: '30px', fontFamily: 'Anton'}}>
-                    <icon className="fa fa-envelope" aria-hidden="true"/>
-                    rverdi643@gmail.com
+                    {/* <icon className="fa fa-envelope" aria-hidden="true"/> */}
+                    {/* rverdi643@gmail.com */}
+                    <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="dark" data-vanity="richard-verdier-2990b61"><a class="LI-simple-link" href='https://www.linkedin.com/in/richard-verdier-2990b61?trk=profile-badge'>Richard Verdier</a></div>
                   </ListItemContent>
                 </ListItem>
               </List>

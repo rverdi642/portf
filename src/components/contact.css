@@ -6,6 +6,11 @@ align-items: flex-start;
 margin-left: 85px;
 }
 
+.LI-profile-badge{
+    width: '300px';
+    
+  } 
+
 .input{
 
     height: 50px;

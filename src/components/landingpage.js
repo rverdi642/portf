@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Grid, Cell } from 'react-mdl';
 import RLV from './img/RLV.jpg';
+import './landing.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import bootstrap from "./img/bootstrap.png";
 import javascript from "./img/javascript.png";
@@ -14,28 +15,19 @@ import react from "./img/React-icon.png";
 class Landing extends Component {
   render() {
     return(
-      <div>
-
-          
-
+      <div >
        <div >
 
-          
+        <Grid className="landing-grid" style={{overflowY: 'scroll'}}>
 
-      
-        <Grid className="landing-grid">
+          <Cell col={12} >
 
-          {/* <div class="LI-profile-badge"  data-version="v1" 
-          data-size="medium" data-locale="en_US" data-type="horizontal" 
-          data-theme="dark" data-vanity="richard-verdier-2990b61"><a class="LI-simple-link" 
-          href='https://www.linkedin.com/in/richard-verdier-2990b61?trk=profile-badge'>Richard Verdier</a></div> */}
+            <div className="banner-text" style={{marginTop: '100px'}}>
 
-
-          <Cell col={12}>
-
-            <div className="banner-text">
-
-
+              <div class="LI-profile-badge" data-version="v1" 
+              data-size="medium" data-locale="en_US" data-type="horizontal" 
+              data-theme="dark" data-vanity="richard-verdier-2990b61"><a class="LI-simple-link" 
+              href='https://www.linkedin.com/in/richard-verdier-2990b61?trk=profile-badge'>Richard Verdier</a></div> 
 
               <h1>Software Engineer</h1>
 
